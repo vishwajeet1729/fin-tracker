@@ -92,9 +92,10 @@ export const FinancialRecordList = () => {
         Header: "Delete",
         id: "delete",
         Cell: ({ row }: { row: Row<FinancialRecord> }) => (
-          <button onClick={() => deleteRecord(row.original._id)} className="button">
-            Delete
-          </button>
+          <button onClick={() => row.original._id && deleteRecord(row.original._id)} className="button">
+          Delete
+        </button>
+        
         )
       }
     ],
