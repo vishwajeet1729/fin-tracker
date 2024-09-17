@@ -4,7 +4,7 @@ import FinancialRecordModal from "./financial-record";
 import  FinancialRecordRouter  from "./routes/financial-records";
 import cors from 'cors'
 const app: Express = express();
-const port: number | string = process.env.PORT || 3001;
+const port: number | string = 3001;
 
 app.use(express.json()); 
 app.use(cors());
